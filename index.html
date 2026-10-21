@@ -1,1 +1,230 @@
-    
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Clínica Veterinaria Patita's</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Veterinaria Patita's</h1>
+      <img src="img/Logo_Patita's.png" alt="Logotipo de la veterinaria patita's" />
+
+      <nav aria-label="Barra de navegación">
+        <a href="#servicios">Servicios</a>
+        <a href="#productos">Productos</a>
+        <a href="#agendar">Agendar Cita</a>
+        <a href="#datos">Horarios de atención</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="servicios">
+        <h2>Servicios que ofrecemos</h2>
+        <p>En Veterinaria Patita's nos preocupamos por la salud y el bienestar de tus mascotas.</p>
+
+        <article>
+          <h3>Consulta veterinaria general</h3>
+          <p>Realizamos revisiones médicas para evaluar la salud de tu mascota, diagnosticar enfermedades y recomendar tratamientos adecuados.</p>
+        </article>
+
+        <article>
+          <h3>Vacunación</h3>
+          <p>
+            Aplicamos vacunas para prevenir enfermedades comunes en perros y gatos, siguiendo un calendario de vacunación según la edad y necesidades de cada
+            mascota.
+          </p>
+        </article>
+
+        <article>
+          <h3>Desparasitación</h3>
+          <p>Ofrecemos tratamientos para prevenir y controlar parásitos internos y externos, como pulgas, garrapatas y parásitos intestinales.</p>
+        </article>
+
+        <article>
+          <h3>Cirugías veterinarias</h3>
+          <p>Realizamos procedimientos quirúrgicos como esterilizaciones y otras intervenciones médicas, previa valoración veterinaria.</p>
+        </article>
+
+        <article>
+          <h3>Peluquería e higiene</h3>
+          <p>Ofrecemos baños, cortes de pelo, limpieza de oídos y corte de uñas para mantener la higiene y comodidad de tu mascota.</p>
+        </article>
+
+        <article>
+          <h3>Exámenes de laboratorio</h3>
+          <p>Realizamos análisis de sangre, orina y otros exámenes que ayudan a detectar enfermedades y evaluar el estado de salud de las mascotas.</p>
+        </article>
+      </section>
+
+      <section id="productos">
+        <h2>Productos para tu mascota</h2>
+        <p>Encuentra productos para la alimentación, higiene y entretenimiento de tus mascotas.</p>
+
+        <article>
+          <h3>Alimentos para mascotas</h3>
+          <p>Disponemos de alimentos para perros y gatos, adaptados a sus diferentes edades y necesidades nutricionales.</p>
+          <ul>
+            <li>Alimento seco para perros y gatos</li>
+            <li>Alimento húmedo</li>
+            <li>Snacks y premios</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Productos de higiene</h3>
+          <p>Artículos para mantener a tu mascota limpia y saludable.</p>
+          <ul>
+            <li>Champús para mascotas</li>
+            <li>Cepillos y peines</li>
+            <li>Productos de limpieza dental</li>
+            <li>Arena sanitaria para gatos</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Juguetes</h3>
+          <p>Juguetes diseñados para estimular la actividad física y el entretenimiento de las mascotas.</p>
+          <ul>
+            <li>Pelotas y juguetes de goma</li>
+            <li>Juguetes interactivos</li>
+            <li>Rascadores para gatos</li>
+            <li>Mordedores para perros</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Accesorios</h3>
+          <p>Accesorios para la comodidad y seguridad de tus mascotas.</p>
+          <ul>
+            <li>Collares y correas</li>
+            <li>Camas y mantas</li>
+            <li>Platos para comida y agua</li>
+            <li>Transportadoras</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="agendar">
+        <h2>Agenda tu cita</h2>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Información para la cita</legend>
+
+            <div class="campo">
+              <label for="nombre">Nombre completo del dueño:</label>
+              <input type="text" id="nombre" name="nombre" required minlength="3" />
+            </div>
+
+            <div class="campo">
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" required autocomplete="email" />
+            </div>
+
+            <div class="campo">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required placeholder="Ej. 0991234567" />
+            </div>
+
+            <div class="campo">
+              <label for="mascota">Nombre y especie de la mascota:</label>
+              <input type="text" id="mascota" name="mascota" required placeholder="Ej. Max (Perro)" minlength="2" />
+            </div>
+
+            <div class="campo">
+              <label for="Urgencia">Urgencia de la consulta</label>
+              <input type="range" id="Urgencia" name="Urgencia" min="1" max="5" step="1" value="3" aria-describedby="ayuda-nivel" />
+              <p id="ayuda-nivel">1 = Urgencia baja | 5 = Urgencia alta</p>
+            </div>
+
+            <div class="campo">
+              <label for="motivo">Motivo de la consulta:</label>
+              <select id="motivo" name="motivo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="consulta">Consulta general</option>
+                <option value="vacuna">Vacunación</option>
+                <option value="desparasitacion">Desparasitación</option>
+                <option value="estetica">Estética / Peluquería</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="fecha">Fecha preferida:</label>
+              <input type="date" id="fecha" name="fecha" required />
+            </div>
+          </fieldset>
+
+          <button type="submit">Agendar cita</button>
+        </form>
+      </section>
+
+      <section id="datos">
+        <h2>Horarios de atención</h2>
+        <p>Consulta nuestros horarios y planifica tu visita a Veterinaria Patita's.</p>
+
+        <table>
+          <caption>
+            Horario semanal de atención
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Día</th>
+              <th scope="col">Horario</th>
+              <th scope="col">Servicios disponibles</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Lunes a viernes</td>
+              <td>08:00 - 18:00</td>
+              <td>Consultas, vacunación, desparasitación y peluquería</td>
+            </tr>
+
+            <tr>
+              <td>Sábado</td>
+              <td>09:00 - 14:00</td>
+              <td>Consultas, vacunación y desparasitación</td>
+            </tr>
+
+            <tr>
+              <td>Domingo</td>
+              <td>Cerrado</td>
+              <td>No disponible</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside>
+        <h2>Consejos para cuidar a tu mascota</h2>
+        <p>En Veterinaria Patita's queremos ayudarte a mantener a tu mascota sana y feliz.</p>
+
+        <h3>Recomendaciones importantes</h3>
+        <ul>
+          <li>Mantén al día las vacunas de tu mascota.</li>
+          <li>Realiza desparasitaciones según las indicaciones del veterinario.</li>
+          <li>Proporciona una alimentación adecuada para su edad y tamaño.</li>
+          <li>Asegúrate de que siempre tenga agua limpia y fresca.</li>
+          <li>Realiza controles veterinarios periódicos.</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <h2>Veterinaria Patita's</h2>
+      <p>Cuidamos la salud y el bienestar de tus mascotas.</p>
+
+      <h3>Información de contacto</h3>
+      <p>Dirección: Azogues, Ecuador</p>
+      <p>Teléfono: 099 123 4567</p>
+      <p>Correo electrónico: patitasVet12@gmail.com</p>
+
+      <p>&copy; 2026 Veterinaria Patita's. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
