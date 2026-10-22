@@ -309,3 +309,17 @@ nav {
     grid-template-columns: 1fr;
   }
 }
+
+
+/*
+   Accesibilidad
+*/
+
+:focus-visible {
+  outline: 3px solid var(--verde_oscuro);
+  outline-offset: 2px;
+}
+
+nav>a:focus-visible {
+  outline-color: var(--Blanco);
+}

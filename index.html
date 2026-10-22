@@ -116,7 +116,7 @@
 
             <div class="campo_texto">
               <label for="nombre">Nombre completo del dueño:</label>
-              <input type="text" id="nombre" name="nombre" required minlength="3" />
+              <input type="text" id="nombre" name="nombre" required minlength="3" autocomplete="name" />
             </div>
 
             <div class="campo_texto">
@@ -126,7 +126,9 @@
 
             <div class="campo_texto">
               <label for="telefono">Teléfono:</label>
-              <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required placeholder="Ej. 0991234567" />
+              <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required placeholder="Ej. 0991234567" autocomplete="tel"
+              aria-describedby="ayuda-telefono" />
+              <p id="ayuda-telefono">Ingrese 10 dígitos sin espacios ni guiones.</p>
             </div>
 
             <div class="campo_texto">
