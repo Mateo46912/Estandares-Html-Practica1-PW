@@ -17,7 +17,7 @@ Variables Y Estilos generales
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1,5;
+  line-height: 1.5;
   color: var(--Color_Texto);
   background-color: var(--Color_Fondo);
 }
