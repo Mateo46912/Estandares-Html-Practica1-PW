@@ -52,7 +52,7 @@ header h1 {
 }
 
 header img {
-  width: 85px;
+  width: 125px;
   height: auto;
 }
 
@@ -216,4 +216,65 @@ footer {
 footer h2,
 footer h3 {
   color: var(--Blanco);
+}
+
+
+/* 
+Implementacion de Grid
+ */
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+section,
+aside {
+  margin-bottom: 0;
+}
+
+#servicios,
+#productos,
+aside {
+  grid-column: 1 / -1;
+}
+
+#servicios,
+#productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+#servicios>h2,
+#servicios>p,
+#productos>h2,
+#productos>p {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+/* 
+Implementacion de Flexbox para el encabezado
+*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
