@@ -218,7 +218,6 @@ footer h3 {
   color: var(--Blanco);
 }
 
-
 /* 
 Implementacion de Grid
  */
@@ -277,4 +276,36 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+
+/*
+ Media Query 800 PX
+*/
+
+@media (max-width: 800px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  section,
+  aside {
+    padding: 16px;
+  }
+
+  #servicios,
+  #productos {
+    grid-template-columns: 1fr;
+  }
 }
