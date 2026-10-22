@@ -114,6 +114,94 @@ aside {
   border-left: 5px solid var(--verde_claro);
 }
 
+
+/*
+FORMULARIO 
+*/
+
+fieldset {
+  border: 1px solid var(--verde_oscuro);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--verde_oscuro);
+}
+
+.campo_texto {
+  margin-bottom: 16px;
+}
+
+.campo_texto label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--verde_oscuro);
+  border-radius: 6px;
+  font: inherit;
+  color: var(--Color_Texto);
+  background-color: var(--Blanco);
+}
+
+input[type="range"] {
+  padding: 0;
+  border: none;
+  accent-color: var(--verde_claro);
+}
+
+button {
+  background-color: var(--verde_claro);
+  color: var(--Blanco);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  margin-top: 16px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--verde_oscuro);
+}
+
+/*
+Tabla Horarios
+*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+caption {
+  font-weight: bold;
+  color: var(--verde_oscuro);
+  margin-bottom: 12px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid var(--verde_oscuro);
+  text-align: left;
+}
+
+th {
+  background-color: var(--verde_claro);
+  color: var(--Blanco);
+}
+
+
 /* 
 Footer
 */

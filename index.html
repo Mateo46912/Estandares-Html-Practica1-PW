@@ -114,33 +114,33 @@
           <fieldset>
             <legend>Información para la cita</legend>
 
-            <div class="campo">
+            <div class="campo_texto">
               <label for="nombre">Nombre completo del dueño:</label>
               <input type="text" id="nombre" name="nombre" required minlength="3" />
             </div>
 
-            <div class="campo">
+            <div class="campo_texto">
               <label for="correo">Correo electrónico:</label>
               <input type="email" id="correo" name="correo" required autocomplete="email" />
             </div>
 
-            <div class="campo">
+            <div class="campo_texto">
               <label for="telefono">Teléfono:</label>
               <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required placeholder="Ej. 0991234567" />
             </div>
 
-            <div class="campo">
+            <div class="campo_texto">
               <label for="mascota">Nombre y especie de la mascota:</label>
               <input type="text" id="mascota" name="mascota" required placeholder="Ej. Max (Perro)" minlength="2" />
             </div>
 
-            <div class="campo">
+            <div class="campo_texto">
               <label for="Urgencia">Urgencia de la consulta</label>
               <input type="range" id="Urgencia" name="Urgencia" min="1" max="5" step="1" value="3" aria-describedby="ayuda-nivel" />
               <p id="ayuda-nivel">1 = Urgencia baja | 5 = Urgencia alta</p>
             </div>
 
-            <div class="campo">
+            <div class="campo_texto">
               <label for="motivo">Motivo de la consulta:</label>
               <select id="motivo" name="motivo" required>
                 <option value="">Seleccione una opción</option>
@@ -151,7 +151,7 @@
               </select>
             </div>
 
-            <div class="campo">
+            <div class="campo_texto">
               <label for="fecha">Fecha preferida:</label>
               <input type="date" id="fecha" name="fecha" required />
             </div>
